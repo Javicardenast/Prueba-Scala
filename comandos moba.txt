@@ -1,0 +1,10 @@
+output_C35_2.filter(col("contra1")===1333495 ).show
+add_prov_sec.filter(col("contra1")===57597333).show
+
+output_STE_ADD_IRB.filter(col("contra1")===63744408).show
+
+
+output_C35_2.write.saveAsTable("bu_backstop.output_C35_2")
+c35_reconfig.write.saveAsTable("bu_backstop.C35_intermedia")
+output_c35_1.write.saveAsTable("bu_backstop.output_c35_1")
+
